@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>PLOT OFFICE — Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the PLOT OFFICE app: an offline-first site layout and plot inventory tool that keeps your data on your device and in cloud accounts you control." />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #ffffff; --text: #1c1c1e; --muted: #636366; --border: #e3e3e8; --accent: #0066cc; --soft: #f2f2f7;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { color-scheme: dark; --bg: #1c1c1e; --text: #f2f2f7; --muted: #aeaeb2; --border: #38383a; --accent: #409cff; --soft: #2c2c2e; }
+    }
+    html[data-appearance="dark"] { color-scheme: dark; --bg: #1c1c1e; --text: #f2f2f7; --muted: #aeaeb2; --border: #38383a; --accent: #409cff; --soft: #2c2c2e; }
+    html[data-appearance="light"] { color-scheme: light; --bg: #ffffff; --text: #1c1c1e; --muted: #636366; --border: #e3e3e8; --accent: #0066cc; --soft: #f2f2f7; }
+    body { margin: 0; padding: 20px 20px 48px; font: 15px/1.55 var(--font); color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; }
+    main { max-width: 680px; margin: 0 auto; }
+    h1 { font-size: 22px; letter-spacing: -0.01em; margin: 0 0 4px; }
+    h2 { font-size: 17px; letter-spacing: -0.01em; margin: 28px 0 8px; }
+    p, li { margin: 0 0 10px; }
+    ul { padding-left: 20px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color: var(--muted); font-size: 13px; margin-bottom: 20px; }
+    .summary { background: var(--soft); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin: 16px 0 8px; }
+    .summary h2 { margin-top: 0; font-size: 15px; }
+    .summary ul { margin: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 8px 0 12px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; font-size: 13px; }
+    .placeholder { background: rgba(255, 204, 0, 0.25); border-radius: 4px; padding: 0 3px; }
+    footer { color: var(--muted); font-size: 13px; margin-top: 32px; border-top: 1px solid var(--border); padding-top: 12px; }
+  </style>
+  <script>
+    // The in-app viewer passes ?appearance=dark|light so the page follows the app theme.
+    (function () {
+      var match = /[?&]appearance=(dark|light)/.exec(location.search);
+      if (match) document.documentElement.setAttribute('data-appearance', match[1]);
+    })();
+  </script>
+</head>
+<body>
+<main>
+  <h1>PLOT OFFICE Privacy Policy</h1>
+  <p class="meta">Effective date: <span class="placeholder" data-publisher="effectiveDate">[DD Month YYYY]</span> · Version 1.0 · Applies to the PLOT OFFICE app for iPhone and iPad and to any PLOT OFFICE apps for other platforms that reference this policy.</p>
+
+  <section class="summary" aria-labelledby="summary">
+    <h2 id="summary">The short version</h2>
+    <ul>
+      <li>PLOT OFFICE is an offline-first tool. Your projects, layout geometry, plot inventory, customer records, schedules and settings are stored on your device, in an encrypted app folder.</li>
+      <li>We operate no servers that receive your data. The app contains no analytics, advertising, crash-reporting, or tracking technology, and it does not use Apple's App Tracking Transparency framework because it never tracks.</li>
+      <li>Cloud backup, when you turn it on, goes to a cloud account that you own and sign in to yourself (iCloud on Apple devices; Google Drive or a comparable service where offered on other platforms). We cannot read those backups.</li>
+      <li>Purchases are processed by Apple. We never see your payment details.</li>
+      <li>DXF drawings you import are read entirely on your device. The original file is not kept; only the geometry needed for your layout is stored.</li>
+      <li>PLOT OFFICE is distributed worldwide through App Store storefronts outside Europe. European regional frameworks such as the EU GDPR, the UK GDPR and the Swiss FADP do not apply to this app because it is not offered in those territories. See section 12.</li>
+    </ul>
+  </section>
+
+  <h2>1. Who we are</h2>
+  <p><span class="placeholder" data-publisher="legalName">[Legal entity name]</span> ("we", "us") publishes PLOT OFFICE. Postal address: <span class="placeholder" data-publisher="address">[Registered address]</span>. Privacy contact: <a href="mailto:" class="placeholder" data-publisher="privacyEmail">[privacy email]</a>. For the purposes of data-protection law we are the developer of the software. Because the app does not transmit your data to us, we do not act as a controller or processor of the records you keep in it. You remain responsible for the records you create, including information about your customers.</p>
+
+  <h2>2. Information the app stores on your device</h2>
+  <p>Everything you create in PLOT OFFICE is written to the app's Documents area on your device, under the folder <code>PlotOffice</code>. Files are written atomically and protected with iOS Data Protection, so they are encrypted at rest while your device is locked. This includes:</p>
+  <table>
+    <tr><th>Category</th><th>Examples</th><th>Why the app needs it</th></tr>
+    <tr><td>Projects and layouts</td><td>Project name, locality, site boundaries and plot polygons derived from DXF drawings or drawn manually, areas, facings, road widths, measurement overrides</td><td>To display and manage your site layout</td></tr>
+    <tr><td>Plot inventory</td><td>Plot numbers, status (available, hold, advance, booked), rates, prices, status history, notes</td><td>To track sales and availability</td></tr>
+    <tr><td>Customer and lead records</td><td>Names, phone numbers, email addresses, addresses, enquiry notes, follow-ups and documents you attach</td><td>To let you manage your own customers. You enter this information; see section 7</td></tr>
+    <tr><td>Schedules</td><td>Tasks, visits, payment reminders, expiries</td><td>To show your calendar</td></tr>
+    <tr><td>Settings and branding</td><td>Business name, logo you choose, currency, units, appearance</td><td>To personalise the app and exports</td></tr>
+    <tr><td>Pro entitlement state</td><td>Whether Pro is active, when it was verified, when it expires</td><td>To unlock Pro features offline; verified against Apple's App Store, never against our servers</td></tr>
+  </table>
+  <p>The app does not access your photos, camera, microphone, location, contacts, calendar, health data or device identifiers for advertising. A logo you add is a file you pick with the system picker.</p>
+
+  <h2>3. DXF drawings</h2>
+  <p>When you import a DXF file, the app parses it on your device to find closed plot boundaries, labels and reference lines. Only the resulting geometry, labels and a per-drawing handle used to match later revisions are saved. The original drawing file is not retained by the app. Exported DXF files are generated on your device and handed to the destination you choose through the system share sheet.</p>
+
+  <h2>4. Cloud backup you control</h2>
+  <p>Backup is optional and off until you leave it on. It uses a cloud account that belongs to you:</p>
+  <ul>
+    <li><strong>iCloud (iPhone and iPad).</strong> The app writes a single backup record to the private CloudKit database of the Apple Account signed in on your device, in the container <code>iCloud.com.ksacademy.PlotOffice</code>. Private CloudKit data is encrypted by Apple and is not accessible to us. Apple's iCloud terms and privacy policy govern that storage. Turning backup off stops new uploads; it does not delete the cloud copy, which you can remove from iCloud storage settings.</li>
+    <li><strong>Google Drive or other personal cloud services (where offered on other platforms).</strong> If a PLOT OFFICE app on another platform offers backup to a service such as Google Drive, it writes to a folder in your own account after you sign in with that provider. The provider's terms and privacy policy apply. We receive no credentials and no copy of the data.</li>
+    <li><strong>Optional synchronisation endpoint.</strong> The app can be configured to push a copy of your workspace to a synchronisation service only if you or your organisation explicitly connect one and sign in. The current App Store release offers no such service operated by us and makes no such connection by default. If you connect a third-party or self-hosted endpoint, that operator's policies govern the data it receives.</li>
+  </ul>
+  <p>Before the app replaces local records with a cloud copy, it keeps a local recovery copy of the replaced version, which you can export from Settings. Recovery copies live on your device only.</p>
+
+  <h2>5. Purchases</h2>
+  <p>PLOT OFFICE Pro is sold through Apple's In-App Purchase system as a lifetime purchase or a yearly subscription. Apple processes payment and holds your payment details; we never receive card or billing information. To unlock Pro, the app checks the signed purchase record that Apple stores on your device using StoreKit. We do not run an account system and do not link purchases to any identity we hold. Refunds and subscription management are handled through Apple.</p>
+
+  <h2>6. What we do not do</h2>
+  <ul>
+    <li>No analytics, usage statistics, or telemetry of any kind, first- or third-party.</li>
+    <li>No advertising, advertising identifiers, or ad networks.</li>
+    <li>No tracking across apps or websites, and no use of the App Tracking Transparency framework because there is nothing to request.</li>
+    <li>No background location, background network monitoring, or push notifications.</li>
+    <li>No remote servers operated by us that receive your records. The only network connections the app makes are to Apple services you use (iCloud, App Store) and to a synchronisation endpoint you explicitly connect.</li>
+    <li>No sale or sharing of personal information. There is nothing to sell or share.</li>
+  </ul>
+
+  <h2>7. Information about your customers</h2>
+  <p>You may record names, contact details and notes about prospective or actual buyers. That information is yours: it stays on your device and in your own cloud account, and you own and control every file the app creates. You are the data fiduciary or controller for those records under the law of the country where you operate, for example India's Digital Personal Data Protection Act 2023 and its rules, the privacy and consumer laws of your own country or state, and internationally recognised privacy baselines such as the OECD Privacy Guidelines and the APEC Privacy Framework (lawful purpose, notice, data minimisation, accuracy, security, and the ability to access, correct and erase). You are responsible for collecting and using customer information lawfully and for honouring your customers' requests to access, correct or delete it. The app's delete, export and recovery-export functions exist to help you do that.</p>
+
+  <h2>8. Sharing and export</h2>
+  <p>When you export a CSV, DXF or JSON file, print a brochure, send a WhatsApp or phone link, or share a project, data leaves the app only to the destination you pick in that moment, through standard system features. We are not party to those transfers.</p>
+
+  <h2>9. Retention and deletion</h2>
+  <ul>
+    <li>Device data remains until you delete a record in the app or uninstall the app. Uninstalling removes the app's Documents folder, Keychain items the app created, and its preferences.</li>
+    <li>iCloud backups remain until you delete them from iCloud (Settings › Apple Account › iCloud › Manage Account Storage › PLOT OFFICE) or replace them from another device.</li>
+    <li>Pro entitlement records are regenerated from Apple's purchase history and can be cleared by uninstalling.</li>
+  </ul>
+
+  <h2>10. Security</h2>
+  <p>Records are stored with iOS Data Protection and written atomically so an interrupted write cannot corrupt an earlier copy. Any sign-in tokens for an optional synchronisation endpoint are stored in the iOS Keychain, restricted to the device they were created on. No method of storage is perfectly secure; keep your device passcode and iCloud account protected, and keep your own exported backups of important data.</p>
+
+  <h2>11. Children</h2>
+  <p>PLOT OFFICE is a professional tool and is not directed to children under 16. We do not knowingly collect information from children, and the app collects no information from anyone.</p>
+
+  <h2>12. Your rights, applicable law and territorial scope</h2>
+  <p><strong>Ownership and control.</strong> Every project, layout, record and export the app creates belongs to you. It is stored in files you can read, export, move and delete at any time, on hardware and cloud accounts you control. We hold no copy and claim no rights in your data.</p>
+  <p><strong>Your rights.</strong> Because your records never reach us, we cannot access, correct or delete them for you; you can do so directly in the app and in your cloud account. If you believe we hold any personal information about you (for example, from an email you sent us), contact <a href="mailto:" class="placeholder" data-publisher="privacyEmail">[privacy email]</a>. We will confirm what we hold, correct or erase it on request, and respond within the period required by the law that applies to you, and in any case within 30 days.</p>
+  <p><strong>Applicable law.</strong> We follow India's Digital Personal Data Protection Act 2023 as our home framework and internationally recognised privacy baselines, including the OECD Privacy Guidelines, the APEC Privacy Framework and the principles of ISO/IEC 29100: collection limitation, purpose specification, data minimisation, accuracy, security safeguards, openness, individual participation and accountability. Where you use the app in another country outside Europe, the privacy and consumer-protection law of that country applies to you as the person keeping the records, and nothing in this policy limits rights that law gives you.</p>
+  <p><strong>Territorial scope.</strong> PLOT OFFICE is distributed worldwide through App Store storefronts outside Europe and is not offered, marketed or supported in the European Union, the European Economic Area, the United Kingdom, Switzerland or other European territories. Consequently, European regional frameworks, including the EU General Data Protection Regulation, the UK GDPR, the ePrivacy Directive and the Swiss Federal Act on Data Protection, do not apply to this app or to our relationship with you, and the app contains no mechanisms designed for them. If you obtain or use the app from a European territory by other means, you do so on your own initiative and the frameworks above still do not create obligations for us beyond those in this policy.</p>
+
+  <h2>13. Changes to this policy</h2>
+  <p>We will post any changes here and update the effective date. Material changes affecting how the app handles data will also be described in the app's release notes. Continued use after the effective date means you accept the revised policy.</p>
+
+  <h2>14. Contact</h2>
+  <p><span class="placeholder" data-publisher="legalName">[Legal entity name]</span><br /><span class="placeholder" data-publisher="address">[Registered address]</span><br /><a href="mailto:" class="placeholder" data-publisher="privacyEmail">[privacy email]</a></p>
+
+  <footer>© <span class="placeholder" data-publisher="year">[Year]</span> <span class="placeholder" data-publisher="legalName">[Legal entity name]</span>. PLOT OFFICE is a trademark of its owner. Apple, iCloud and App Store are trademarks of Apple Inc. Google Drive is a trademark of Google LLC.</footer>
+</main>
+<script src="./publisher.js"></script>
+</body>
+</html>
